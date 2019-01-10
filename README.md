@@ -54,6 +54,10 @@ The test suite can be run with:
 
     $ lein test
 
+## Documentation
+
+* [API Docs](http://celwell.github.io/prime-mul-table)
+
 ## License
 
 Copyright © 2019 Christopher Elwell
