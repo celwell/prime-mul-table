@@ -21,7 +21,10 @@
   -n : the number of prime numbers (default: 10)
   -t : show elapsed time (time to find primes and construct/print table)"
   [& args]
-  (let [options (:options (parse-opts args opts))]
-    (wrap-when (:show-elapsed-time options)
-               time
-               (print-cli (table (:number-of-primes options))))))
+  (let [parsed-opts (parse-opts args opts)]
+    (if-not (:errors parsed-opts)
+      (let [options (:options parsed-opts)]
+        (wrap-when (:show-elapsed-time options)
+                   time
+                   (print-cli (table (:number-of-primes options)))))
+      (run! println (:errors parsed-opts)))))
