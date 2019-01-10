@@ -23,8 +23,8 @@
     (testing "Can generate a list of primes."
       (is (= [2] (take 1 (primes))))
       (is (= [2 3 5 7 11] (take 5 (primes))))
-      (is (= [2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71
-              73 79 83 89 97 101 103 107 109 113]
+      (is (= [2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59
+              61 67 71 73 79 83 89 97 101 103 107 109 113]
              (take 30 (primes)))))))
 
 (deftest primes-mul-table-test

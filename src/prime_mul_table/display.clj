@@ -9,15 +9,17 @@
        (apply str)))
 
 (defn- cell-padding
-  "Get spaces to prepend for creating right-alignment within cell."
+  "Prepend spaces to cause right-alignment within cell."
   [cell-size value]
   (repeat (- (dec cell-size) (count (str value))) " "))
 
 (defn- wrap-cell
+  "Wrap a cell value with for standardized layout."
   [cell-size value]
   (concat (cell-padding cell-size value) [value " |"]))
 
 (defn- stringify-row
+  "Prepare a row of the table as a string for display."
   [cell-size row]
   (->> (map (partial wrap-cell cell-size) row)
        flatten
