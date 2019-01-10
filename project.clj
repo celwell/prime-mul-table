@@ -1,4 +1,4 @@
-(defproject prime-mul-table "0.1.0-SNAPSHOT"
+(defproject prime-mul-table "1.0.0"
   :description "Command line utility to display multiplication table of prime numbers."
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
