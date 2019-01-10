@@ -8,4 +8,5 @@
   :main ^:skip-aot prime-mul-table.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :codox {:output-path "codox"})
+  :codox {:project {:name "prime-mul-table"}
+          :output-path "codox"})
