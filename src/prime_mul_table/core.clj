@@ -30,4 +30,3 @@
     (wrap-when (:show-elapsed-time options)
                time
                (print-cli (table (:number-of-primes options))))))
-

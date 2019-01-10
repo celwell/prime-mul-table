@@ -12,8 +12,3 @@
   (testing "Run as from cli, where n = 3."
     (is (= (slurp (io/resource "resources/n-is-3-expected.out"))
            (with-out-str (-main "-n" "3"))))))
-
-
-
-
-
