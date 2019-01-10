@@ -14,7 +14,7 @@
   (repeat (- (dec cell-size) (count (str value))) " "))
 
 (defn- wrap-cell
-  "Wrap a cell value with for standardized layout."
+  "Wrap a cell value for standardized layout."
   [cell-size value]
   (concat (cell-padding cell-size value) [value " |"]))
 
